@@ -1,0 +1,115 @@
+{
+  "current_id": "00958b6280194da7b07ef63eac940c2d",
+  "songs": [
+    {
+      "id": "2caed884377c4a4abe4710f28d8393b6",
+      "title": "Chuyện Đôi Ta",
+      "artist": "Emcee L (Da LAB) ft Muộii",
+      "youtube_id": "6eONmnFB9sw",
+      "youtube_url": "https://www.youtube.com/watch?v=6eONmnFB9sw",
+      "thumbnail": "https://i.ytimg.com/vi/6eONmnFB9sw/mqdefault.jpg",
+      "duration": 225.941,
+      "favorite": false,
+      "current": false
+    },
+    {
+      "id": "ed05d9b7af5e4109ab2bd60f8c75bc9f",
+      "title": "CÓ AI THƯƠNG EM NHƯ ANH",
+      "artist": "Tóc Tiên ft. Touliver",
+      "youtube_id": "neCmEbI2VWg",
+      "youtube_url": "https://www.youtube.com/watch?v=neCmEbI2VWg",
+      "thumbnail": "https://i.ytimg.com/vi/neCmEbI2VWg/mqdefault.jpg",
+      "duration": 269.201,
+      "favorite": false,
+      "current": false
+    },
+    {
+      "id": "1155e961a1e24b6da11fbdf84829d739",
+      "title": "Nhắn nhủ",
+      "artist": "Ronboogz",
+      "youtube_id": "vfKiaXKO44M",
+      "youtube_url": "https://www.youtube.com/watch?v=vfKiaXKO44M",
+      "thumbnail": "https://i.ytimg.com/vi/vfKiaXKO44M/mqdefault.jpg",
+      "duration": 241.301,
+      "favorite": false,
+      "current": false
+    },
+    {
+      "id": "fa142c515bb84c36a5ce587a653baec1",
+      "title": "Thu Cuối",
+      "artist": "Mr T x Yanbi x Hằng Bingboong",
+      "youtube_id": "6KH8eqKlohA",
+      "youtube_url": "https://www.youtube.com/watch?v=6KH8eqKlohA",
+      "thumbnail": "https://i.ytimg.com/vi/6KH8eqKlohA/mqdefault.jpg",
+      "duration": 308.681,
+      "favorite": false,
+      "current": false
+    },
+    {
+      "id": "11a04a07166e4b12b6b2cad2700631aa",
+      "title": "Nếu Như Ta Chẳng Còn",
+      "artist": "MCK (ft. A$AP Ướt Mi)",
+      "youtube_id": "rYWLIJB214Q",
+      "youtube_url": "https://www.youtube.com/watch?v=rYWLIJB214Q",
+      "thumbnail": "https://i.ytimg.com/vi/rYWLIJB214Q/mqdefault.jpg",
+      "duration": 314.781,
+      "favorite": false,
+      "current": false
+    },
+    {
+      "id": "58cd9ffbcfb941258ab1d455fd2d77ab",
+      "title": "REGRET",
+      "artist": "Quân A.P ft Pháp Kiều ft Quang Trung ft Ali Hoàng Dương ft Lâm Bảo Ngọc",
+      "youtube_id": "io0CLX_ZStY",
+      "youtube_url": "https://www.youtube.com/watch?v=io0CLX_ZStY",
+      "thumbnail": "https://i.ytimg.com/vi/io0CLX_ZStY/mqdefault.jpg",
+      "duration": 0,
+      "favorite": false,
+      "current": false
+    },
+    {
+      "id": "4fc41fe71bba426f92157ce5f8c9b4f8",
+      "title": "CÔ ẤY CỦA ANH ẤY",
+      "artist": "Bảo Anh",
+      "youtube_id": "RlTDbIutJsU",
+      "youtube_url": "https://www.youtube.com/watch?v=RlTDbIutJsU",
+      "thumbnail": "https://i.ytimg.com/vi/RlTDbIutJsU/mqdefault.jpg",
+      "duration": 324.021,
+      "favorite": false,
+      "current": false
+    },
+    {
+      "id": "3940477c1dfd45f6a4f3c81b00ce59fc",
+      "title": "Tìm Em",
+      "artist": "HNGLE ft. Bảo Anh",
+      "youtube_id": "gJAbDSse5WM",
+      "youtube_url": "https://www.youtube.com/watch?v=gJAbDSse5WM",
+      "thumbnail": "https://i.ytimg.com/vi/gJAbDSse5WM/mqdefault.jpg",
+      "duration": 272.101,
+      "favorite": false,
+      "current": false
+    },
+    {
+      "id": "f54f5edfb5ef477ba4226d842419f846",
+      "title": "SỢ RẰNG EM BIẾT ANH CÒN YÊU EM",
+      "artist": "JUUN D",
+      "youtube_id": "ybfq5gtvnj0",
+      "youtube_url": "https://www.youtube.com/watch?v=ybfq5gtvnj0",
+      "thumbnail": "https://i.ytimg.com/vi/ybfq5gtvnj0/mqdefault.jpg",
+      "duration": 320.821,
+      "favorite": false,
+      "current": false
+    },
+    {
+      "id": "00958b6280194da7b07ef63eac940c2d",
+      "title": "ANH CHẲNG THỂ",
+      "artist": "Phạm Kỳ",
+      "youtube_id": "lLfZc0XsiIw",
+      "youtube_url": "https://www.youtube.com/watch?v=lLfZc0XsiIw",
+      "thumbnail": "https://i.ytimg.com/vi/lLfZc0XsiIw/mqdefault.jpg",
+      "duration": 217.061,
+      "favorite": false,
+      "current": true
+    }
+  ]
+}
