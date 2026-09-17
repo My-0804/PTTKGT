@@ -1,0 +1,26 @@
+.youtube-shell {
+  justify-self: center;
+  width: 356px;
+  height: 200px;
+  overflow: hidden;
+  border: 5px solid #fff;
+  border-radius: 17px;
+  background: #19172e;
+  box-shadow: 16px 24px 40px #362c5a40;
+}
+.youtube-shell iframe { display: block; width: 100%; height: 100%; }
+.song-name img {
+  width: 48px;
+  height: 35px;
+  display: block;
+  flex: none;
+  border-radius: 7px;
+  object-fit: cover;
+  background: #eee9ff;
+}
+@media (max-width: 850px) {
+  .youtube-shell { margin-top: 24px; justify-self: start; }
+}
+@media (max-width: 590px) {
+  .youtube-shell { width: 100%; min-width: 200px; height: 200px; }
+}

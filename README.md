@@ -1,4 +1,4 @@
-# MUSIC PLAYLIST MANAGER – PYTHON FLASK WEB
+# LUVMUSIC – MUSIC PLAYLIST MANAGER
 
 Đây là phiên bản YouTube-only xây dựng từ đề tài Python ban đầu. Thuật toán chính vẫn nằm trong Python; HTML/JavaScript không thay thế Doubly Linked List.
 
@@ -7,7 +7,7 @@
 1. Cài Python 3.10 trở lên và đánh dấu **Add Python to PATH**.
 2. Giải nén dự án.
 3. Nhấp đúp `run.bat`.
-4. Khi xuất hiện dòng `Running on http://127.0.0.1:5000`, mở địa chỉ đó bằng Chrome hoặc Edge.
+4. Trình duyệt sẽ tự mở tại `http://localhost:5000`. Nếu chưa mở, hãy nhập địa chỉ này vào Chrome hoặc Edge.
 
 Có thể chạy thủ công:
 
@@ -21,17 +21,19 @@ Lưu ý: không mở trực tiếp `templates/index.html`, vì giao diện cần
 ## 2. Cấu trúc dự án
 
 ```text
-PTTKGT-Python-Web/
+LuvMusic-Doubly-Linked-List/
 ├── app.py                 # Flask API – cầu nối Python và HTML
 ├── core_struct.py         # Node và PlaylistManager (Doubly Linked List)
 ├── templates/index.html   # Giao diện trình phát nhạc
 ├── static/app.js          # Gọi Flask API và điều khiển YouTube Player
 ├── static/style.css       # Thiết kế giao diện
+├── static/youtube.css     # Kiểu hiển thị trình phát YouTube
 ├── data/playlist.json     # Lưu thông tin playlist
 ├── original/              # Ba file Python gốc để đối chiếu
 ├── test_core.py           # Kiểm thử cấu trúc dữ liệu
 ├── test_api.py            # Kiểm thử kết nối Flask
-└── run.bat                # Chạy nhanh trên Windows
+├── run.bat                # Chạy nhanh trên Windows
+└── run.sh                 # Chạy nhanh trên Linux/macOS
 ```
 
 ## 3. Luồng kết nối Python với HTML
@@ -83,3 +85,9 @@ python -m unittest test_core.py test_api.py -v
 ```
 
 Code gốc có hai phiên bản không đồng nhất. Bản web dùng quy tắc mới trong `Giao diện.py`: xóa theo đúng **title + artist**, tìm theo cả tên bài hát và ca sĩ. Các lớp và cơ chế Doubly Linked List ban đầu vẫn được giữ nguyên.
+
+## 7. Đưa dự án lên GitHub
+
+Tải toàn bộ **nội dung bên trong thư mục** `LuvMusic-Doubly-Linked-List` lên repository. Không tải thư mục `__pycache__` hoặc file `.pyc`. Sau khi tải dự án về, người chấm chỉ cần giải nén và nhấp đúp `run.bat` trên Windows.
+
+Ứng dụng phát video bằng YouTube IFrame Player. Một số video có thể không phát trong trang web nếu chủ sở hữu video đã tắt tính năng nhúng; khi đó hãy thử một liên kết YouTube khác cho phép nhúng.

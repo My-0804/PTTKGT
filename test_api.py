@@ -21,7 +21,7 @@ class FlaskApiTests(unittest.TestCase):
     def test_complete_api_flow(self):
         page = self.client.get("/")
         self.assertEqual(page.status_code, 200)
-        self.assertIn(b"Music Playlist Manager", page.data)
+        self.assertIn(b"LuvMusic", page.data)
 
         response = self.client.post("/api/songs", json={
             "title": "Waiting For You",
