@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Music Playlist Manager sử dụng Python Flask và Doubly Linked List">
+  <title>LuvMusic</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='youtube.css') }}">
+</head>
+<body>
+  <div class="layout">
+    <aside>
+      <a class="brand" href="/"><b>M</b><span>LuvMusic</span></a>
+      <nav>
+        <button class="nav active" data-view="all">♫ <span>Thư viện</span></button>
+        <button class="nav" data-view="favorites">♥ <span>Yêu thích</span></button>
+        <button class="nav" id="shuffleNav">⤨ <span>Trộn playlist</span></button>
+      </nav>
+    </aside>
+
+    <main>
+      <header>
+        <label class="search"><span>⌕</span><input id="search" type="search" placeholder="Tìm tên bài hát hoặc ca sĩ..."></label>
+        <button class="primary" id="openModal">＋ Thêm bài hát</button>
+      </header>
+
+      <section class="hero">
+        <div>
+          <h1>Âm nhạc cho<br><em>mọi khoảnh khắc.</em></h1>
+          <p>Thêm những bài hát yêu thích từ YouTube và tận hưởng âm nhạc theo cách của bạn.</p>
+          <button class="primary" id="playAll">▶ Phát danh sách</button>
+        </div>
+        <div class="youtube-shell"><div id="youtubePlayer"></div></div>
+      </section>
+
+      <section class="library">
+        <div class="heading">
+          <div><h2 id="headingTitle">Danh sách bài hát</h2><p><span id="count">0</span> bài hát • <span id="total">00:00</span></p></div>
+          <p id="status" role="status">Sẵn sàng</p>
+        </div>
+        <div class="song-table">
+          <div class="table-head"><span>#</span><span>Bài hát</span><span>Ca sĩ</span><span>Thời lượng</span><span></span></div>
+          <div id="songList"></div>
+          <div class="empty" id="empty"><b>♫</b><h3>Playlist đang trống</h3><p>Thêm liên kết YouTube đầu tiên để bắt đầu.</p></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer class="player">
+    <div class="playing"><div class="cover">♫</div><div><strong id="currentTitle">Chưa chọn bài hát</strong><span id="currentArtist">LuvMusic</span></div><button id="favorite" title="Yêu thích" disabled>♡</button></div>
+    <div class="player-main">
+      <div class="controls"><button id="shuffle" title="Trộn">⤨</button><button id="previous" title="Bài trước">◀</button><button class="play" id="play" title="Phát hoặc tạm dừng">▶</button><button id="next" title="Bài tiếp theo">▶</button><button id="repeat" title="Lặp lại">↻</button></div>
+      <div class="timeline"><span id="time">00:00</span><input id="progress" type="range" min="0" max="100" value="0"><span id="duration">00:00</span></div>
+    </div>
+    <div class="volume">♬ <input id="volume" type="range" min="0" max="1" step=".01" value=".8"></div>
+  </footer>
+
+  <dialog id="modal">
+    <form id="addForm">
+      <div class="modal-title"><div><small>THÊM BÀI HÁT MỚI</small><h2>Thêm bài hát</h2></div><button type="button" id="close">×</button></div>
+      <label>Tên bài hát<input name="title" required maxlength="100" placeholder="Ví dụ: Waiting For You"></label>
+      <label>Ca sĩ<input name="artist" required maxlength="100" placeholder="Ví dụ: MONO"></label>
+      <label>Liên kết YouTube<input id="youtubeUrl" name="youtube_url" type="url" required placeholder="https://www.youtube.com/watch?v=..."></label>
+      <p class="error" id="error"></p>
+      <div class="actions"><button type="button" class="secondary" id="cancel">Hủy</button><button class="primary" type="submit">Thêm vào playlist</button></div>
+    </form>
+  </dialog>
+
+  <script src="{{ url_for('static', filename='app.js') }}"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
